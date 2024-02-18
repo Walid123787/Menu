@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background: url(img.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    height: 450px;
+    width: 450px;
+    background:transparent;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(193, 81, 221);
+}
+.titre{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 800;
+    animation: color 2s linear infinite;
+}
+@keyframes color{
+    from{
+        color: rgb(#f10ef1, rgb(76, 6, 126));
+    }
+    to{
+        color: rgb( rgb(76, 6, 126), rgb(57, 202, 122));
+    }
+}
+.box-text{
+    width: 80%;
+    margin: auto;
+}
+.input, .sumbit{
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.53);
+    background-color: transparent;
+}
+.input input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 80%;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+i{
+    float:right;
+    position: relative;
+    bottom: -10px;
+    transform: translate(-50%);
+    right: 10px;
+    font-size: 20px;
+}
+input::placeholder{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    transition: 1s;
+    position: relative;
+}
+input:hover::placeholder{
+    padding-left: 100%;
+}
+.condition{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.condition .check{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.condition .check input{
+    width: 15px;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.sumbit{
+    background-color: #1befcf27;
+    color: white;
+    font-weight: 800;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+.sumbit:hover{
+    background-color: #1befcf;
+    box-shadow: 0 0 10px #1befcf;
+}
+.parent p{
+    text-align: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration:none ;
+    position: relative;
+}
+a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+a:hover::after{
+    width: 100%;
+}
+@media (max-width:600px){
+    .parent{
+        height: 400px;
+        width: 350px;
+    }
+
+
+}
